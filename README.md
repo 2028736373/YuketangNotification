@@ -1,0 +1,2 @@
+# YuketangNotification
+一款浏览器插件，可以在长江雨课堂老师发布习题时检测到并通过Server酱公众号发送微信消息进行提醒
