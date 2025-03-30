@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "雨课堂问题提醒",
+  "version": "0.2",
+  "description": "在课堂问题出现时通过Server酱发送通知",
+  "permissions": ["scripting"],
+  "host_permissions": [
+    "*://changjiang.yuketang.cn/*",
+    "https://sctapi.ftqq.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://changjiang.yuketang.cn/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+  "16": "icons/icon16.png",
+  "48": "icons/icon48.png",
+  "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+  }  
+  }
+  
